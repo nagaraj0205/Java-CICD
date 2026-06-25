@@ -1,3 +1,3 @@
 FROM eclipse-temurin:17-jre
-COPY target/springboot-k8s-1.0.jar app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+COPY . .
+ENTRYPOINT ["java","-jar","/java-cicd-demo.jar"]
